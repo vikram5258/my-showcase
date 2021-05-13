@@ -1,3 +1,6 @@
+"use strict";
+
+require("dotenv").config();
 const express = require("express");
 const PORT = 3000;
 const app = express();
@@ -12,6 +15,6 @@ app.get("/", (req, res, next) => {
   res.send("Welcome to Firebase Cloud Functions");
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT | PORT, () => {
   console.info("Server is running on PORT:", PORT);
 });
