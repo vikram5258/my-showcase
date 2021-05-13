@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res, next) => {
   console.info("/hello call success ");
-  res.send("Welcome to Firebase Cloud Functions");
+  res.send("Welcome to my showreel");
 });
 
 app.listen(process.env.PORT, () => {
