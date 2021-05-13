@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/hello", (req, res, next) => {
+app.get("/", (req, res, next) => {
   console.info("/hello call success ");
   res.send("Welcome to Firebase Cloud Functions");
 });
