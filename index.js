@@ -15,7 +15,7 @@ app.get("/", (req, res, next) => {
 });
 app.get("/hello", (req, res, next) => {
   console.info("/hello call success ");
-  res.send("just checking");
+  res.send("<h1>just checking</h1>");
 });
 app.listen(process.env.PORT, () => {
   console.info("Server is running on PORT:", process.env.PORT);
